@@ -18,6 +18,8 @@ func main() {
 
 	filteredVersions := internal.FilterVersions(versions)
 
+	fmt.Print("\nCurrently available only for the Linux operating system with x86-64 (amd64) architecture\n\n")
+
 	fmt.Println("Available Go versions:")
 	fmt.Println("------------------------------------")
 	fmt.Printf("%-5s %-10s %-15s\n", "ID", "Version", "Installed")
