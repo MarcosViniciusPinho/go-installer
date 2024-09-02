@@ -14,6 +14,6 @@ As this is an open-source project, our first step is to validate its usefulness 
 ## Execution
 
 To run this program, you first need to download 'goinstaller', then execute the command `./bin/goinstaller`. The program will then present the following options:
-![Terminal with version selection options](versions.png)  
+<br />![Terminal with version selection options](versions.png)<br /><br />
 If a version has already been downloaded on the user's machine, it will be indicated with a '✅'. We keep downloaded versions in a cache located in a dedicated directory, so there's no need to repeatedly download from the internet. In our case, there are 4 versions cached on the machine.  
 **Note:** When switching versions, you must open a new terminal for the change to take effect. This is an area that could be improved.
