@@ -59,6 +59,10 @@ func main() {
 		log.Fatalf("Error installing Go: %v", err)
 	}
 
+	if err := internal.SetShellEnv(); err != nil {
+		log.Fatalf("Error configuring environment variables in the shell: %v", err)
+	}
+
 	fmt.Println("Installation completed successfully!")
-	fmt.Printf("The version %s is in use - Type the command 'go version' to confirm the version\n", selectedVersion)
+	fmt.Printf("The version %s is in use - Open a new terminal and type the command 'go version' to confirm the version\n", selectedVersion)
 }
